@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 # Power Abuse: An Analysis of Police Brutality and its Pervasiveness in the US: Project Proposal
-=======
-# Title of your Project: Project Proposal
->>>>>>> 16890e37f53d027545c82d04089a18203eaf240f
 
 ## *_Codename: Project Police Brutality_*  
 Calvin Tzen, nivlac@uw.edu  
@@ -11,7 +7,6 @@ Olivia Nurita Price, oprice@uw.edu
 INFO-201: Technical Foundations of Informatics - The Information School - University of Washington  
 Autumn 2022
 
-<<<<<<< HEAD
 ### The Dataset
 The dataset that we’ve chosen contains data concerning police brutality victims, including information such as manner of death, whether or not they were armed, gender, age, race, mental illnesses, attempts to flee, and city of death. In addition, they’ve provided information about the various cities, such as median household income, high school graduation rate of everyone over 25, poverty levels, and the demographic with regards to race. This data will help us answer our research questions as they provide variables that we can analyze to see if there’s any correlation between them, such as number of incidents vs the high school graduation rate in a city, or the race of people killed vs the demographic in the city.
 
@@ -47,27 +42,3 @@ Wullum, K. (2017, September 22). Fatal police shootings in the US. Kaggle. Retri
 WP Company. (2020, January 22). Fatal force: Police shootings database. The Washington Post. https://www.washingtonpost.com/graphics/investigations/police-shootings-database/
 
 Zare, H., Meyerson, N. S., Delgado, P., Crifasi, C., Spencer, M., Gaskin, D., &amp; Thorpe, R. J. (2022, July 2). How place and race drive the numbers of fatal police shootings in the US: 2015–2020. Preventive Medicine. https://www.sciencedirect.com/science/article/pii/S0091743522001815
-=======
-For what to do, see the [`../instructions/`](../instructions/) directory, specifically:
-
-* [Design Brief](../instructions/project-design-brief.pdf)
-* [Project Proposal Requirements](../instructions/p01-proposal-requirements.md)
-### Project Code Name
-Project Police Brutality
-
-
-### Project title
-
-Power Abuse: An Analysis of Police Brutality and its Pervasiveness in the US
-
-### Authors
-Calvin Tzen, nivlac@uw.edu
-Lesley Xu, cxu24@uw.edu
-Olivia Nurita Price, oprice@uw.edu
-
-### Affiliation
-INFO-201: Technical Foundations of Informatics - The Information School - University of Washington
-
-### Date
-Autumn 2022
->>>>>>> 16890e37f53d027545c82d04089a18203eaf240f
