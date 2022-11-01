@@ -7,6 +7,16 @@ Olivia Nurita Price, oprice@uw.edu
 INFO-201: Technical Foundations of Informatics - The Information School - University of Washington  
 Autumn 2022
 
+### Abstract
+We are concerned with the cases of police brutality occurring in the United States because the number of brutal use of force toward minority groups continues to rise.
+To address this concern, we plan to analyze data concerning police brutality and display our results of analysis through visualizing the data, answering questions, and summarizing our findings. We will try to pinpoint specific factors that account for the reason people are being unfairly targeted by the police.
+
+### Keywords
+_Police brutality; Racism; Racism in the United States; Demographics; use of force;_
+
+### Introduction
+Police brutality poses a huge issue to society as reports of it continue to occur. With so many wrongful deaths and injuries happening to civilians by the police, it brings up the conversation about the discrimination that allows this to happen. Our team aims to investigate the issue of police brutality in the United States by analyzing different datasets from years 2015 to 2017. We hope to examine the factors relating to the police’s unnecessary use of force towards civilians. We want to mainly consider how race is correlated with police brutality, but also look at other factors such as location, manner of death, and certain facts concerning those locations like high school graduation rate and poverty rate. We hope by analyzing these factors, we can continue a discussion about the discrimination that happens within the different cases of police brutality.
+
 ### Problem Domain
 **Project framing**: Because our problem is police brutality in the US, the problem domain includes the various factors that can lead to police brutality. We will be addressing various factors such as race, location, graduation rate, and household income from multiple perspectives such as governmental, social, and economic. Addressing these factors can allow us to ask whether there’s any correlation between them and cases of police brutality. According to “How place and race drive the numbers of fatal police shootings in the US: 2015–2020.”,race and location play a significant role in fatal police shootings. At the same time, the rate of shootings remains steady over the past few years according to “Fatal force: Police shootings database.” “Tract level associations between historical residential redlining and contemporary fatal encounters with police”, different from the other two references, provided us with an insight of the correlation between the location and the probability of fatal police shootings happening. For instance, the areas redlined by HOLC are predicted to be having more fatal encounters.
 
@@ -60,3 +70,6 @@ Wullum, K. (2017, September 22). Fatal police shootings in the US. Kaggle. Retri
 WP Company. (2020, January 22). Fatal force: Police shootings database. The Washington Post. https://www.washingtonpost.com/graphics/investigations/police-shootings-database/
 
 Zare, H., Meyerson, N. S., Delgado, P., Crifasi, C., Spencer, M., Gaskin, D., &amp; Thorpe, R. J. (2022, July 2). How place and race drive the numbers of fatal police shootings in the US: 2015–2020. Preventive Medicine. https://www.sciencedirect.com/science/article/pii/S0091743522001815
+
+### Appendix A: Questions
+Can we use multiple datasets from different contributors? We’re having a hard time finding any datasets that contain at least 3 data files.
