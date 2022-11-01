@@ -52,3 +52,6 @@ Wullum, K. (2017, September 22). Fatal police shootings in the US. Kaggle. Retri
 WP Company. (2020, January 22). Fatal force: Police shootings database. The Washington Post. https://www.washingtonpost.com/graphics/investigations/police-shootings-database/
 
 Zare, H., Meyerson, N. S., Delgado, P., Crifasi, C., Spencer, M., Gaskin, D., &amp; Thorpe, R. J. (2022, July 2). How place and race drive the numbers of fatal police shootings in the US: 2015–2020. Preventive Medicine. https://www.sciencedirect.com/science/article/pii/S0091743522001815
+
+### Appendix A: Questions
+Can we use multiple datasets from different contributors? We’re having a hard time finding any datasets that contain at least 3 data files.
