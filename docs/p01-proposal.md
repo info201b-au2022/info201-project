@@ -7,6 +7,16 @@ Olivia Nurita Price, oprice@uw.edu
 INFO-201: Technical Foundations of Informatics - The Information School - University of Washington  
 Autumn 2022
 
+### Abstract
+We are concerned with the cases of police brutality occurring in the United States because the number of brutal use of force toward minority groups continues to rise.
+To address this concern, we plan to analyze data concerning police brutality and display our results of analysis through visualizing the data, answering questions, and summarizing our findings. We will try to pinpoint specific factors that account for the reason people are being unfairly targeted by the police.
+
+### Keywords
+_Police brutality; Racism; Racism in the United States; Demographics; use of force;_
+
+### Introduction
+Police brutality poses a huge issue to society as reports of it continue to occur. With so many wrongful deaths and injuries happening to civilians by the police, it brings up the conversation about the discrimination that allows this to happen. Our team aims to investigate the issue of police brutality in the United States by analyzing different datasets from years 2015 to 2017. We hope to examine the factors relating to the police’s unnecessary use of force towards civilians. We want to mainly consider how race is correlated with police brutality, but also look at other factors such as location, manner of death, and certain facts concerning those locations like high school graduation rate and poverty rate. We hope by analyzing these factors, we can continue a discussion about the discrimination that happens within the different cases of police brutality.
+
 ### The Dataset
 The dataset that we’ve chosen contains data concerning police brutality victims, including information such as manner of death, whether or not they were armed, gender, age, race, mental illnesses, attempts to flee, and city of death. In addition, they’ve provided information about the various cities, such as median household income, high school graduation rate of everyone over 25, poverty levels, and the demographic with regards to race. This data will help us answer our research questions as they provide variables that we can analyze to see if there’s any correlation between them, such as number of incidents vs the high school graduation rate in a city, or the race of people killed vs the demographic in the city.
 
