@@ -7,6 +7,8 @@ output: html_document
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+source("../source/chart_two.R")
 ```
 
 ## What is this file for?
@@ -43,12 +45,14 @@ When you click the **Knit** button a document will be generated that includes bo
 summary(cars)
 ```
 
-## Including Plots
+## Deaths Based on Race in Different States
 
-You can also embed plots, for example:
+This graph displays the number of deaths that occur per race in a given state. When looking at different states. those with more diverse demographics such as California will see a wide variety in the race of those killed in violent police shootings, but those who are more majority-white such as Kentucky will see a much bigger ratio of White people killed. Native Americans, being a much smaller proportion of the population of most states, typically do not see very many deaths in any states, while White people, being the majority race in America, see a pretty high proportion of deaths cause by police officers in any state.
 
-```{r pressure, echo=FALSE}
-plot(pressure)
+```{r chart_two}
+# Example: a graph showing the deaths in California and another showing the deaths 
+# in Kentucky:
+race_chart("CA")
+race_chart("KY")
 ```
 
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
