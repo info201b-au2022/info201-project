@@ -35,5 +35,3 @@ race_chart <- function(state){
   return(chart)
 }
 
-ca_group = grouped("CA")
-race_chart("CA")
