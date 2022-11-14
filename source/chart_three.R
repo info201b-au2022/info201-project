@@ -1,6 +1,6 @@
 # load the packages
 library(dplyr)
-library(tidyr)
+library(tidyverse)
 library(ggplot2)
 library(readr)
 
@@ -8,17 +8,29 @@ library(readr)
 police_killings <- read_csv("~/Documents/info201/project/info201-project/data/PoliceKillingsUS.csv", stringsAsFactors = FALSE)
 View(police_killings)
 
+# select the state for boxplot
+select <- function(state_chosen){
+  select <- police_killings %>%
+    filter(state == state_chosen) 
+  return(select)
+}
+
 # create boxplot function
-boxplot_by_age <- function(police_killings){
-  chart <- ggplot(data = police_killings, mapping = aes(x = state, y = age), na.rm = TRUE) + 
-    geom_boxplot() + 
+plot_by_age <- function(state){
+  state_data <- select(state)
+  chart <- ggplot(data = state_data) +
+    geom_violin(
+      mapping = aes(x = state, y = age), 
+      na.rm = TRUE,
+      fill = "light blue"
+    ) + 
     labs(
       x = "State",
       y = "Age",
-      title = "Boxplot by Age"
+      title = paste("Violinplot by Age in", state)
     ) 
   return(chart)
 }
 
-boxplot_by_age(police_killings)
-
+select("CA")
+plot_by_age("CA")
