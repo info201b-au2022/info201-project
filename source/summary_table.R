@@ -2,7 +2,7 @@
 # Imports csv files into RStudio
 library(tidyverse)
 
-police_killings <- read.csv("~/info201/project/info201-project/data/PoliceKillingsUS.csv", stringsAsFactors = FALSE)
+police_killings <- read.csv("~/info201/info201-project/project/data/PoliceKillingsUS.csv", stringsAsFactors = FALSE)
 
 aggregate <- police_killings %>%
   group_by(state) %>%
@@ -19,4 +19,3 @@ aggregate <- police_killings %>%
             body_camera_on = round(sum(body_camera == TRUE, na.rm = TRUE) / n(), 2),
             body_camera_off = round(sum(body_camera == FALSE, na.rm = TRUE) / n(), 2)
             )
-

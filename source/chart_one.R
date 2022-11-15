@@ -3,7 +3,7 @@ library(dplyr)
 library(ggplot2)
 
 # Imports csv files into RStudio
-police_killings <- read.csv("~/info201/project/info201-project/data/PoliceKillingsUS.csv", stringsAsFactors = FALSE)
+police_killings <- read.csv("~/info201/info201-project/project/data/PoliceKillingsUS.csv", stringsAsFactors = FALSE)
 police_killings$race[police_killings$race == "A"] <- "Asian"
 police_killings$race[police_killings$race == "B"] <- "Black"
 police_killings$race[police_killings$race == "H"] <- "Hispanic"
@@ -27,9 +27,9 @@ body_cam_chart <- function(state){
   chart <- ggplot(df2)+
     geom_linerange(aes(x = race, ymin = 0, ymax = Freq, colour = body_camera), 
                    position = position_dodge(width = 1))+
-    labs(title="Race vs Police's use of Body Cam",
-         x="Race",
-         y="Frequency of Body Cam Use") +
+    labs(title = paste("Race vs Police's Use of Body Cams in Killings in", state),
+         x = "Race",
+         y = "Number of Deaths") +
     geom_point(aes(x = race, y = Freq, colour = body_camera),
                position = position_dodge(width = 1))+
     coord_flip()
