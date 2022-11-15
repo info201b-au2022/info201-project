@@ -19,3 +19,4 @@ aggregate <- police_killings %>%
             body_camera_on = round(sum(body_camera == TRUE, na.rm = TRUE) / n(), 2),
             body_camera_off = round(sum(body_camera == FALSE, na.rm = TRUE) / n(), 2)
             )
+
