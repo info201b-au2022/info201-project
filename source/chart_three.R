@@ -14,22 +14,26 @@ select <- function(state_chosen){
   return(select)
 }
 
-# create boxplot function
+# create boxplot and violin plot function
 plot_by_age <- function(state){
   state_data <- select(state)
   chart <- ggplot(data = state_data) +
     geom_violin(
       mapping = aes(x = state, y = age), 
       na.rm = TRUE,
-      fill = "light blue"
+      fill = "#00BFC4"
+    ) + 
+    geom_boxplot(
+      mapping = aes(x = state, y = age),
+      na.rm = TRUE,
+      width = .1,
+      fill = "#00BFC4"
     ) + 
     labs(
       x = "State",
       y = "Age",
-      title = paste("Violinplot by Age in", state)
-    ) 
+      title = paste("Deaths distribution based on age in", state)
+    ) + 
+    coord_flip()
   return(chart)
 }
-
-select("CA")
-plot_by_age("CA")

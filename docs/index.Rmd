@@ -72,3 +72,13 @@ race_chart("CA")
 race_chart("KY")
 ```
 
+## Deaths based on Age in Different States
+
+This graph displays the age distribution and frequency of victims in a given state. The age distributions in California and Kentucky are both right skewed. When looking at the minimums and maximums, California has significantly higher number of younger victims from police killing than elder victims from police killing, as well as a few high outliers; while in Kentucky, the number of younger and elder victims from police killing are much closer. Based on the age distribution of California and Kentucky, it is reasonable to infer that there are more police killing victims died at their early twenties or early thirties comparing to victims that died at a extremely old or young age. 
+
+```{r chart_three}
+# Example: a graph showing the distribution of ages deaths caused by police violence in California 
+# and another showing the Kentucky 
+plot_by_age("CA")
+plot_by_age("KY")
+```
