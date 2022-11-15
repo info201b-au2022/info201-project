@@ -54,11 +54,6 @@ body_cam_chart("CA")
 
 ```
 
-
-```{r cars}
-plot_by_age("CA")
-```
-
 ## Deaths Based on Race in Different States
 
 This graph displays the number of deaths that occur per race in a given state. When looking at different states. those with more diverse demographics such as California will see a wide variety in the race of those killed in violent police shootings, but those who are more majority-white such as Kentucky will see a much bigger ratio of White people killed. Native Americans, being a much smaller proportion of the population of most states, typically do not see very many deaths in any states, while White people, being the majority race in America, see a pretty high proportion of deaths cause by police officers in any state. Lynne Peeples, a science journalist in Seattle, Washington, talks about how "data from California show that police stopped and used force against Black people disproportionately, compared with other racial groups, in 2018." By analyzing the proportion of certain races killed per state (provided by the graph) compared to the proportion of the race in the population, we should be able to see if there is indeed more proportion of certain races getting killed than there are in the population.
