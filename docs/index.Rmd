@@ -9,8 +9,8 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 library(tidyverse)
 source("../source/chart_one.R")
-source("../source/chart_two.R")
 source("../source/chart_three.R")
+source("../source/chart_two.R")
 ```
 
 ## What is this file for?
@@ -61,7 +61,9 @@ plot_by_age("CA")
 
 ## Deaths Based on Race in Different States
 
-This graph displays the number of deaths that occur per race in a given state. When looking at different states. those with more diverse demographics such as California will see a wide variety in the race of those killed in violent police shootings, but those who are more majority-white such as Kentucky will see a much bigger ratio of White people killed. Native Americans, being a much smaller proportion of the population of most states, typically do not see very many deaths in any states, while White people, being the majority race in America, see a pretty high proportion of deaths cause by police officers in any state.
+This graph displays the number of deaths that occur per race in a given state. When looking at different states. those with more diverse demographics such as California will see a wide variety in the race of those killed in violent police shootings, but those who are more majority-white such as Kentucky will see a much bigger ratio of White people killed. Native Americans, being a much smaller proportion of the population of most states, typically do not see very many deaths in any states, while White people, being the majority race in America, see a pretty high proportion of deaths cause by police officers in any state. Lynne Peeples, a science journalist in Seattle, Washington, talks about how "data from California show that police stopped and used force against Black people disproportionately, compared with other racial groups, in 2018." By analyzing the proportion of certain races killed per state (provided by the graph) compared to the proportion of the race in the population, we should be able to see if there is indeed more proportion of certain races getting killed than there are in the population.
+
+Source: [What the data say about police brutality and racial bias](https://www.nature.com/articles/d41586-020-01846-z)
 
 ```{r chart_two}
 # Example: a graph showing the deaths in California and another showing the deaths 
