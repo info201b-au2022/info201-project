@@ -1,11 +1,11 @@
 # summary_info.R 
-
+library(tidyverse)
 # Imports csv files into RStudio
-police_killings <- read.csv("~/info201/info201-project/project/data/PoliceKillingsUS.csv", stringsAsFactors = FALSE)
-median_household_income_2015 <- read.csv("~/info201/info201-project/project/data/MedianHouseholdIncome2015.csv", stringsAsFactors = FALSE)
-poverty_levels <- read.csv("~/info201/info201-project/project/data/PercentagePeopleBelowPovertyLevel.csv", stringsAsFactors = FALSE)
-complete_high_school <- read.csv("~/info201/info201-project/project/data/PercentOver25CompletedHighSchool.csv", stringsAsFactors = FALSE)
-demographic <- read.csv("~/info201/info201-project/project/data/ShareRaceByCity.csv", stringsAsFactors = FALSE)
+police_killings <- read.csv("~/info201/project/info201-project/data/PoliceKillingsUS.csv", stringsAsFactors = FALSE)
+median_household_income_2015 <- read.csv("~/info201/project/info201-project/data/MedianHouseholdIncome2015.csv", stringsAsFactors = FALSE)
+poverty_levels <- read.csv("~/info201/project/info201-project/data/PercentagePeopleBelowPovertyLevel.csv", stringsAsFactors = FALSE)
+complete_high_school <- read.csv("~/info201/project/info201-project/data/PercentOver25CompletedHighSchool.csv", stringsAsFactors = FALSE)
+demographic <- read.csv("~/info201/project/info201-project/data/ShareRaceByCity.csv", stringsAsFactors = FALSE)
 
 # A source file that takes in a dataset and returns a list of info about it:
 summary_info <- list()

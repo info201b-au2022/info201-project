@@ -15,19 +15,13 @@ source("../source/summary_table.R")
 source("../source/summary_info.R")
 ```
 
-
-## ABOUT THIS FILE: 
-
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
-
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
-
 ## Dynamic Paragraph
 
-The data set consisting of all the murders committed by police in the United States from 2015 to 2017 is made up of `r summary_info$num_observations` observations, meaning there were `r summary_info$num_observations` recorded police killings in that time period. After performing multiple summary statistics on the police killing data set, as well as the United States poverty data set, we were able to get a general idea about what the data could tell us. The state with the highest amount of people under the poverty line was `r summary_info$max_poverty`, whereas the state with the lowest amount of their population beneath the poverty line was `r summary_info$min_poverty`. This information was important to us as we could see if there was a connection between statewide poverty and police brutality. To get an overview on the demographics of those killed, we found that `r summary_info$race_count`out of `r summary_info$num_observations` of those killed were people of color. When looking at gender, we found that `r summary_info$gender_count`out of `r summary_info$num_observations` of those killed were male.
+The data set consisting of all the murders committed by police in the United States from 2015 to 2017 is made up of `r summary_info$num_observations` observations, meaning there were `r summary_info$num_observations` recorded police killings in that time period. After performing multiple summary statistics on the police killing data set, as well as the United States poverty data set, we were able to get a general idea about what the data could tell us. The state with the highest amount of people under the poverty line was `r summary_info$max_poverty`, whereas the state with the lowest amount of their population beneath the poverty line was `r summary_info$min_poverty`. This information was important to us as we could see if there was a connection between statewide poverty and police brutality. To get an overview on the demographics of those killed, we found that `r summary_info$race_count` out of `r summary_info$num_observations` of those killed were people of color. When looking at gender, we found that `r summary_info$gender_count` out of `r summary_info$num_observations` of those killed were male.
+
 
 ## Description on the summary table
-We grouped our data set by the feature of states. The table is included because the stakeholders can pull out the meaningful information and statistics related to police shooting of a certain state clearly and effectively. The table reveals the total number of deaths, the races of the victims, the ages of the youngest and oldest victims from each state, and the percentage of whether body camera is used. This summary table provides a brief insight of the police shooting data for stakeholders besides the data visualization charts. For example, if the stakeholder wants to have a glance on the races of police shooting victims in CA, they will notice the highest total number of deaths and the largest group of hispanic victims. 
+We grouped our data set by the feature of states. The table is included because the stakeholders can pull out the meaningful information and statistics related to police shooting of a certain state clearly and effectively. The table reveals the total number of deaths, the races of the victims, the ages of the youngest and oldest victims from each state, and the percentage of whether body camera is used. This summary table provides a brief insight of the police shooting data for stakeholders besides the data visualization charts. For example, if the stakeholder wants to have a glance on the races of police shooting victims in CA, they will notice the highest total number of deaths and the largest group of Hispanic victims. 
 
 ```{r summary table}
 aggregated_table <- knitr::kable(
