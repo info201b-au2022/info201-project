@@ -22,20 +22,6 @@ interactive_2_sidebar <- sidebarPanel(
     label = "Select a state",
     choices = states
   )
-  #, selectInput(
-  #   inputId = "selectvar",
-  #   label = "Desired Emission Type",
-  #   choices = c(
-  #     "Overall including land-use change (CO2)" = "co2_including_luc", 
-  #     "Overall excluding land-use change (CO2)" = "co2", 
-  #     "Coal (CO2)" = "coal_co2",
-  #     "Flaring (CO2)" = "flaring_co2",
-  #     "Cement (CO2)" = "cement_co2",
-  #     "Gas (CO2)" = "gas_co2",
-  #     "Land-use change (CO2)" = "land_use_change_co2",
-  #     "Oil (CO2)" = "oil_co2"
-  #   )
-  # )
 )
 
 interactive_2_chart <- mainPanel(
