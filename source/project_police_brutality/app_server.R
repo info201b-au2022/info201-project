@@ -39,5 +39,19 @@ server <- function(input, output) {
     
     return(caption)
   })
+  
+  output$plot3 <- renderPlotly({
+    
+    police_killings <- police_killings %>%
+      filter(state == c(input$state_var))
+    
+    plot_ly(police_killings,
+            x = ~age,
+            y = ~state,
+            color = ~state,
+            type = "box") %>%
+      layout(title = "Age distribution Boxplot")
+  })
+  
 }
 

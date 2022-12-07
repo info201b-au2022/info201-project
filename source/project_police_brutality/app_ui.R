@@ -60,5 +60,26 @@ ui <- navbarPage(
   introduction_panel,
   interactive_2_panel,
   summary_panel,
-  report_panel
+  report_panel,
+  tabPanel("Compare Victims Age Distribution by States", 
+           
+           sidebarLayout(
+             sidebarPanel(selectInput("state_var",
+                                      label = "Select State: ",
+                                      choices = c(unique(police_killings$state)),
+                                      selected = "WA",
+                                      multiple = TRUE)),
+             mainPanel(plotlyOutput("plot3"),
+                       h3("Summary and Insights"),
+                       p("This data visualization displays the age distribution of victims in 
+                         a given state or selected given states. Through observing the boxplot 
+                         of each state, users may able to see the age distribution pattern of 
+                         police shooting victims in each state. By multi selecting the state, 
+                         users may also be able to compare and contrast the age distribution 
+                         in different state. "),
+                       p("The users may explore the age distribution patterns of different states
+                         based on their interest, finding states with similar patterns or have a big
+                         difference. "))
+           )
+  )
 )
