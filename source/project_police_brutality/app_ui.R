@@ -16,6 +16,11 @@ police_killings$race[police_killings$race == ""] <- "Unknown"
 
 states <- unique(police_killings$state)
 
+introduction_panel <- tabPanel(
+  title = "Introduction",
+  titlePanel("Introduction")
+)
+
 interactive_2_sidebar <- sidebarPanel(
   selectInput(
     inputId = "selectstate",
@@ -38,8 +43,22 @@ interactive_2_panel <- tabPanel(
   )
 )
 
+summary_panel <- tabPanel(
+  title = "Summary",
+  titlePanel("Summary")
+)
+
+report_panel <- tabPanel(
+  title = "Report",
+  titlePanel("Power Abuse: An Analysis of Police Brutality and its Pervasiveness 
+             in the US")
+)
+
 ui <- navbarPage(
-  theme = shinytheme("cerulean"),
+  theme = shinytheme("superhero"),
   "Gun Violence",
-  interactive_2_panel
+  introduction_panel,
+  interactive_2_panel,
+  summary_panel,
+  report_panel
 )
