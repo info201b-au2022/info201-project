@@ -55,7 +55,7 @@ report_panel <- tabPanel(
 )
 
 ui <- navbarPage(
-  theme = shinytheme("superhero"),
+  theme = shinytheme("united"),
   "Gun Violence",
   introduction_panel,
   interactive_2_panel,
