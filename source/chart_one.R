@@ -50,16 +50,3 @@ stacked_chart <- function(state){
   
   return(chart)
 }
-
-stacked_chart2 <- function(data){
-  df2 <- data %>%
-    count(race, body_camera) %>%
-    mutate(Freq = n)
-  chart <- ggplot(data = df2, aes(x = race, y = Freq, fill = body_camera)) + 
-    geom_bar(position="fill", stat="identity")+
-    labs(title = paste("Race vs use of Body Camera"),
-         x = "Race",
-         y = "Percent of Deaths")
-  
-  return(chart)
-}

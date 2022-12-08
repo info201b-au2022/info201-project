@@ -5,7 +5,7 @@ library(tidyverse)
 library(plotly)
 library(shinythemes)
 
-police_killings <- read.csv("~/info201/project/info201-project/data/PoliceKillingsUS.csv", stringsAsFactors = FALSE)
+police_killings <- read.csv("~/Documents/info201/info201-project/data/PoliceKillingsUS.csv", stringsAsFactors = FALSE)
 police_killings$race[police_killings$race == "A"] <- "Asian"
 police_killings$race[police_killings$race == "B"] <- "Black"
 police_killings$race[police_killings$race == "H"] <- "Hispanic"
@@ -115,7 +115,7 @@ summary_panel <- tabPanel(
 
 report_panel <- tabPanel(
   title = "Report",
-  includeMarkdown("~/info201/project/info201-project/docs/p01-proposal.md")
+  includeMarkdown("~/Documents/info201/info201-project/docs/p01-proposal.md")
 )
 
 ui <- navbarPage(
