@@ -5,7 +5,7 @@ library(tidyverse)
 library(plotly)
 library(shinythemes)
 
-police_killings <- read.csv("~/Documents/info201/info201-project/data/PoliceKillingsUS.csv", stringsAsFactors = FALSE)
+police_killings <- read.csv("~/info201/project/info201-project/data/PoliceKillingsUS.csv", stringsAsFactors = FALSE)
 police_killings$race[police_killings$race == "A"] <- "Asian"
 police_killings$race[police_killings$race == "B"] <- "Black"
 police_killings$race[police_killings$race == "H"] <- "Hispanic"
@@ -91,7 +91,7 @@ interactive_3_panel <- tabPanel(
         multiple = TRUE)
       ),
       mainPanel(
-        plotlyOutput("plot3"),
+        plotlyOutput("chart3"),
         h3("Summary and Insights"),
         p("This data visualization displays the age distribution of victims in 
           a given state or selected given states. Through observing the boxplot 
@@ -113,8 +113,7 @@ summary_panel <- tabPanel(
 
 report_panel <- tabPanel(
   title = "Report",
-  titlePanel("Power Abuse: An Analysis of Police Brutality and its Pervasiveness 
-             in the US")
+  includeMarkdown("~/info201/project/info201-project/docs/p01-proposal.md")
 )
 
 ui <- navbarPage(

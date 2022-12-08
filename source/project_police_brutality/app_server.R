@@ -17,6 +17,7 @@ server <- function(input, output) {
     
     return(chart)
   })
+  
   output$chart2 <- renderPlotly({
     data <- police_killings %>%
       filter(state == input$selectstate) %>%
@@ -54,7 +55,7 @@ server <- function(input, output) {
     return(caption)
   })
   
-  output$plot3 <- renderPlotly({
+  output$chart3 <- renderPlotly({
     
     police_killings <- police_killings %>%
       filter(state == c(input$state_var))

@@ -57,6 +57,12 @@ Through analyzing, visualizing, and presenting the police shooting dataset, we h
 Some limitations that we’ve considered for our dataset include the fact that it might be a little bit outdated, with a lot of these datasets ending around 2017-2020. These end before COVID hit, so the data may not be representative of current situations. One dataset we found that covered the most amount of information only addresses the years 2015-2017. Because this data is a bit outdated, the results of our findings might not be completely relevant to the current state of police brutality in the US. However, since police brutality is an ongoing issue, we hope it still addresses the still current problems with racism in police brutality. Another limitation that we’ve considered is that within the dataset some minorities will not be represented well. Certain traits such as one’s sexuality or specific race may fall under umbrella terms so that they are less likely to be looked at specifically. Due to the low participation from law enforcement, FBI are no longer posting dataset containing details of each incident to the public.  
 Another limitation is that though we want to link our findings with data concerning demographics of a state, our current data set does not provide us with the necessary state data to make the connection clear, which means that we may need the people reading out report to have to do a little bit of outside research to complete our conclusion. This is not ideal and we may circumvent this problem by finding a demographic dataset later on if possible.
 
+### Findings
+
+### Discussion
+
+### Conclusion
+
 ### References
 
 Mitchell, J., & Chihaya, G. K. (2022, April 26). Tract level associations between historical residential redlining and contemporary fatal encounters with police. Social Science &amp; Medicine.
@@ -73,6 +79,3 @@ Wullum, K. (2017, September 22). Fatal police shootings in the US. Kaggle. Retri
 WP Company. (2020, January 22). Fatal force: Police shootings database. The Washington Post. https://www.washingtonpost.com/graphics/investigations/police-shootings-database/
 
 Zare, H., Meyerson, N. S., Delgado, P., Crifasi, C., Spencer, M., Gaskin, D., &amp; Thorpe, R. J. (2022, July 2). How place and race drive the numbers of fatal police shootings in the US: 2015–2020. Preventive Medicine. https://www.sciencedirect.com/science/article/pii/S0091743522001815
-
-### Appendix A: Questions
-Can we use multiple datasets from different contributors? We’re having a hard time finding any datasets that contain at least 3 data files.
