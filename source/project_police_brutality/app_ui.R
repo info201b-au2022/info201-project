@@ -19,8 +19,7 @@ states <- unique(police_killings$state)
 introduction_panel <- tabPanel(
   title = "Introduction",
   titlePanel("Introduction"),
-  mainPanel(h3("Shiny Introduction"),
-            p("This data set presents statistics about gun violence across the United States 
+  mainPanel(p("This data set presents statistics about gun violence across the United States 
               from 2015 to 2017, provided by the Washington Post database and posted onto Kaggle. 
               This app displays three visualizations to help answer questions about the possible 
               factors and influences on gun violence."),
@@ -34,7 +33,9 @@ introduction_panel <- tabPanel(
 )
 
 interactive_1_main <- mainPanel(
-  plotOutput("chart1")
+  plotOutput("chart1"),
+  h3("Summary and Insights"),
+  textOutput("caption1")
 )
 
 interactive_1_sidebar <- sidebarPanel(
@@ -59,7 +60,7 @@ interactive_1_sidebar2 <- sidebarPanel(
 
 interactive_1_panel <- tabPanel(
   title = "Chart 1",
-  titlePanel("Chart 1"),
+  titlePanel("Proportion of Body Camera Usage by Race in Different States"),
   sidebarLayout(
     interactive_1_sidebar2,
     interactive_1_main
