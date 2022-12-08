@@ -18,7 +18,7 @@ server <- function(input, output) {
     return(chart)
   })
   
-  output$caption1 <- renderText({
+    output$caption1 <- renderText({
     caption <- paste("This graph displays the proportion of deaths that included 
                      the use of a body camera or not per race in ", input$stateselected, 
                      ". Overall, when looking at each of the states, it's clear to see 
@@ -71,7 +71,7 @@ server <- function(input, output) {
     return(caption)
   })
   
-  output$plot3 <- renderPlotly({
+  output$chart3 <- renderPlotly({
     
     police_killings <- police_killings %>%
       filter(state == c(input$state_var))
