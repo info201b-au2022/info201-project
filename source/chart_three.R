@@ -5,7 +5,7 @@ library(ggplot2)
 library(readr)
 
 # load the data file
-police_killings <- read.csv("~/info201/project/info201-project/data/PoliceKillingsUS.csv", stringsAsFactors = FALSE)
+police_killings <- read.csv("~/Documents/info201/info201-project/data/PoliceKillingsUS.csv", stringsAsFactors = FALSE)
 
 # select the state for boxplot
 select <- function(state_chosen){

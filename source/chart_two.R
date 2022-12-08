@@ -1,6 +1,6 @@
 library(tidyverse)
 # Chart that displays death based on race depending on what state you input
-police_killings <- read.csv("~/info201/project/info201-project/data/PoliceKillingsUS.csv", stringsAsFactors = FALSE)
+police_killings <- read.csv("~/Documents/info201/info201-project/data/PoliceKillingsUS.csv", stringsAsFactors = FALSE)
 police_killings$race[police_killings$race == "A"] <- "Asian"
 police_killings$race[police_killings$race == "B"] <- "Black"
 police_killings$race[police_killings$race == "H"] <- "Hispanic"

@@ -3,7 +3,7 @@ library(dplyr)
 library(ggplot2)
 
 # Imports csv files into RStudio
-police_killings <- read.csv("~/info201/project/info201-project/data/PoliceKillingsUS.csv", stringsAsFactors = FALSE)
+police_killings <- read.csv("~/Documents/info201/info201-project/data/PoliceKillingsUS.csv", stringsAsFactors = FALSE)
 police_killings$race[police_killings$race == "A"] <- "Asian"
 police_killings$race[police_killings$race == "B"] <- "Black"
 police_killings$race[police_killings$race == "H"] <- "Hispanic"
@@ -20,7 +20,7 @@ select <- function(state_chosen){
 }
 
 # Create lollipop plot
-body_cam_chart <- function(state){
+body_cam_charts <- function(state){
   df2 <- select(state) %>%
     count(race, body_camera) %>%
     mutate(Freq = n)
@@ -33,6 +33,33 @@ body_cam_chart <- function(state){
     geom_point(aes(x = race, y = Freq, colour = body_camera),
                position = position_dodge(width = 1))+
     coord_flip()
+  
+  return(chart)
+}
+
+# Stacked chart
+stacked_chart <- function(state){
+  df2 <- select(state) %>%
+    count(race, body_camera) %>%
+    mutate(Freq = n)
+  chart <- ggplot(data = df2, aes(x = race, y = Freq, fill = body_camera)) + 
+    geom_bar(position="fill", stat="identity")+
+    labs(title = paste("Race vs use of Body Camera"),
+         x = "Race",
+         y = "Percent of Deaths")
+  
+  return(chart)
+}
+
+stacked_chart2 <- function(data){
+  df2 <- data %>%
+    count(race, body_camera) %>%
+    mutate(Freq = n)
+  chart <- ggplot(data = df2, aes(x = race, y = Freq, fill = body_camera)) + 
+    geom_bar(position="fill", stat="identity")+
+    labs(title = paste("Race vs use of Body Camera"),
+         x = "Race",
+         y = "Percent of Deaths")
   
   return(chart)
 }

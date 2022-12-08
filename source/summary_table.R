@@ -2,7 +2,7 @@
 # Imports csv files into RStudio
 library(tidyverse)
 
-police_killings <- read.csv("~/info201/project/info201-project/data/PoliceKillingsUS.csv", stringsAsFactors = FALSE)
+police_killings <- read.csv("~/Documents/info201/info201-project/data/PoliceKillingsUS.csv", stringsAsFactors = FALSE)
 
 aggregate <- police_killings %>%
   group_by(state) %>%
