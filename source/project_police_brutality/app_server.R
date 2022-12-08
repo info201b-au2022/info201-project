@@ -49,8 +49,9 @@ server <- function(input, output) {
             x = ~age,
             y = ~state,
             color = ~state,
-            type = "box") %>%
-      layout(title = "Age distribution Boxplot")
+            type = "box"
+            ) %>%
+    layout(title = "Age distribution Boxplot")
   })
   
 }
