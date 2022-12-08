@@ -18,13 +18,23 @@ states <- unique(police_killings$state)
 
 introduction_panel <- tabPanel(
   title = "Introduction",
-  titlePanel("Introduction")
+  titlePanel("Introduction"),
+  mainPanel(h3("Shiny Introduction"),
+            p("This data set presents statistics about gun violence across the United States 
+              from 2015 to 2017, provided by the Washington Post database and posted onto Kaggle. 
+              This app displays three visualizations to help answer questions about the possible 
+              factors and influences on gun violence."),
+            h3("We seek to answer these questions: "),
+            p("Does one’s race influence gun violence?"),
+            p("How does one’s age influence gun violence? "),
+            p("How does the use of a body camera differ amongst different states and races? "),
+            img(src="https://i0.wp.com/www.yesmagazine.org/wp-content/uploads/imports/269ff4c6d4074b30b2435d19b482de76.jpg?w=1400&quality=90&ssl=1",
+                height = 400, 
+                width = 600))
 )
 
 interactive_1_main <- mainPanel(
-  plotOutput("chart1"),
-  h3("Summary and Insights"),
-  textOutput("caption1")
+  plotOutput("chart1")
 )
 
 interactive_1_sidebar <- sidebarPanel(
@@ -49,7 +59,7 @@ interactive_1_sidebar2 <- sidebarPanel(
 
 interactive_1_panel <- tabPanel(
   title = "Chart 1",
-  titlePanel("Proportion of Body Camera Usage by Race in Different States"),
+  titlePanel("Chart 1"),
   sidebarLayout(
     interactive_1_sidebar2,
     interactive_1_main
