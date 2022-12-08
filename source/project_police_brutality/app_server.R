@@ -59,17 +59,19 @@ server <- function(input, output) {
   })
   
   output$caption2 <- renderText({
-    caption <- paste0("This graph displays the number of deaths that occur per 
-    race in ", input$selectstate, ". When looking at different states. those with more diverse 
-    demographics such as California will see a wide variety in the race of those 
-    killed in violent police shootings, but those who are more majority-white 
-    such as Kentucky will see a much bigger ratio of White people killed. Native 
-    Americans, being a much smaller proportion of the population of most states, 
-    typically do not see very many deaths in any states, while White people, 
-    being the majority race in America, see a pretty high proportion of deaths 
-    cause by police officers in any state.")
-    
-    return(caption)
+    paste0("This graph displays the number of deaths that occur per 
+            race in ", input$selectstate, ". When looking at different states. those with more diverse 
+            demographics such as California will see a wide variety in the race of those 
+            killed in violent police shootings, but those who are more majority-white 
+            such as Kentucky will see a much bigger ratio of White people killed. Native 
+            Americans, being a much smaller proportion of the population of most states, 
+            typically do not see very many deaths in any states, while White people, 
+            being the majority race in America, see a pretty high proportion of deaths 
+            cause by police officers in any state. However, though there's a smaller 
+            proportion of black and Hispanic population in the country, many states 
+            have disproportionately higher gun violence towards those two races in 
+            particular."
+           )
   })
   
   output$chart3 <- renderPlotly({
