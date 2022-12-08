@@ -17,6 +17,23 @@ server <- function(input, output) {
     
     return(chart)
   })
+  
+  output$caption1 <- renderText({
+    caption <- paste("This graph displays the proportion of deaths that included 
+                     the use of a body camera or not per race in ", input$stateselected, 
+                     ". Overall, when looking at each of the states, it's clear to see 
+                     that the use of body cameras is not prevalent whatsoever, across 
+                     all races. When comparing the state with the highest poverty level 
+                     in the data(Mississippi) to the state with the lowest poverty level 
+                     (New Jersey), it's interesting to note that while neither states 
+                     incorporate heavy use of the body camera, New Jersey has more use 
+                     of it than Mississippi with victims in the Asian category. When looking 
+                     at a large and diverse state like California, The majority of deaths across 
+                     all races fail to incorporate the use of body cameras.")
+    
+    return(caption)
+  })
+  
   output$chart2 <- renderPlotly({
     data <- police_killings %>%
       filter(state == input$selectstate) %>%

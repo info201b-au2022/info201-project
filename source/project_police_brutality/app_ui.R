@@ -22,7 +22,9 @@ introduction_panel <- tabPanel(
 )
 
 interactive_1_main <- mainPanel(
-  plotOutput("chart1")
+  plotOutput("chart1"),
+  h3("Summary and Insights"),
+  textOutput("caption1")
 )
 
 interactive_1_sidebar <- sidebarPanel(
@@ -47,7 +49,7 @@ interactive_1_sidebar2 <- sidebarPanel(
 
 interactive_1_panel <- tabPanel(
   title = "Chart 1",
-  titlePanel("Chart 1"),
+  titlePanel("Proportion of Body Camera Usage by Race in Different States"),
   sidebarLayout(
     interactive_1_sidebar2,
     interactive_1_main
