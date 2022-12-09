@@ -58,6 +58,7 @@ Some limitations that we’ve considered for our dataset include the fact that i
 Another limitation is that though we want to link our findings with data concerning demographics of a state, our current data set does not provide us with the necessary state data to make the connection clear, which means that we may need the people reading out report to have to do a little bit of outside research to complete our conclusion. This is not ideal and we may circumvent this problem by finding a demographic dataset later on if possible.
 
 ### Findings
+When addressing how race affects the cases of police brutality in America, we found that while white people make up the majority of these deaths, we have to take into consideration the proportion of these races that make up the entire population. Because other races like Black and Hispanic still have a significant amount of deaths despite their population size to be less than White people, we would need to consider that Black and Hispanic people could still be disproportionately targeted by police brutality. When looking at the ages of the victims, we found that the age distribution differed greatly across all states, with no clear pattern. When looking at the use of body camera in these cases, we found that across all states, a large majority of the deaths failed to incorporate the use of a body camera. In states where there seems to be a larger proportion of body camera usage, we need to consider the amount of cases that state had in the data.
 
 ### Discussion
 
