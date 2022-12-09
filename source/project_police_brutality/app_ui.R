@@ -15,7 +15,7 @@ police_killings$race[police_killings$race == "N"] <- "Native"
 police_killings$race[police_killings$race == "O"] <- "Other"
 police_killings$race[police_killings$race == ""] <- "Unknown"
 
-states <- unique(police_killings$state)
+states <- sort(unique(police_killings$state))
 
 introduction_panel <- tabPanel(
   title = "Introduction",
@@ -55,7 +55,7 @@ interactive_1_sidebar2 <- sidebarPanel(
   selectInput(
     inputId = "stateselected",
     label = "Select a State",
-    choices = sort(unique(police_killings$state))
+    choices = states
   )
 )
 
@@ -73,7 +73,6 @@ interactive_2_sidebar <- sidebarPanel(
     inputId = "selectstate",
     label = "Select a state",
     choices = states,
-    selected = "WA"
   )
 )
 
@@ -85,7 +84,7 @@ interactive_2_chart <- mainPanel(
 
 interactive_2_panel <- tabPanel(
   title = "Chart 2",
-  titlePanel("Deaths Based on Race in Different States Interactive Graph"),
+  titlePanel("Deaths Based on Race in Different States"),
   sidebarLayout(
     interactive_2_sidebar,
     interactive_2_chart
@@ -131,13 +130,21 @@ summary_panel <- tabPanel(
               use and race, as there's a lack of body camera use in general, except for a few 
               outliers, where there may have been not a lot of deaths occurring in that state, and 
               therefore showing a higher proportion of body camera use. When comparing the state with 
-              the highest poverty level in the data(Mississippi) to the state with the lowest poverty level 
+              the highest poverty level in the data (Mississippi) to the state with the lowest poverty level 
               (New Jersey), it's interesting to note that while neither states incorporate heavy use of 
               the body camera, New Jersey has more use of it than Mississippi with victims in the Asian 
               category. When looking at a large and diverse state like California, The majority of deaths across 
               all races fail to incorporate the use of body cameras."),
             h3("Race"),
-            p("How does one’s age influence killings by police? "),
+            p("When looking through the bar graph for each state, there's many instances in which there's 
+              majority white deaths, which is to be expected in a predominately white populated country. However,
+              looking at states such as California and New York will show that there are way more black and 
+              Hispanic deaths than white deaths, despite the disparity in the population. Even in states like 
+              Ohio with a much smaller general population, we see an overwhelmingly large number of black deaths 
+              in conjunction with other races. Thus, we can reasonably conclude that race plays a large part in 
+              police brutality and that despite the larger number of white deaths compared to black deaths, 
+              the proportion of the black population dying to police brutality and the proportion of the white 
+              population dying to the same cause is overwhelmingly different."),
             h3("Age"),
             p("According to the boxplot that we created, the victims in most states are relatively younger than we thought.
               When looking into specific states, California has significantly higher number of younger victims 
