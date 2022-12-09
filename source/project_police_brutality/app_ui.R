@@ -29,8 +29,8 @@ introduction_panel <- tabPanel(
             p("How does one’s age influence killings by police? "),
             p("How does the use of a body camera differ amongst different states and races? "),
             img(src="https://i0.wp.com/www.yesmagazine.org/wp-content/uploads/imports/269ff4c6d4074b30b2435d19b482de76.jpg?w=1400&quality=90&ssl=1",
-                height = 400, 
-                width = 600))
+                height = 390, 
+                width = 680))
 )
 
 interactive_1_main <- mainPanel(
@@ -139,7 +139,13 @@ summary_panel <- tabPanel(
             h3("Race"),
             p("How does one’s age influence killings by police? "),
             h3("Age"),
-            p("Does one’s race influence killings by police?"),
+            p("According to the boxplot that we created, the victims in most states are relatively younger than we thought.
+              When looking into specific states, California has significantly higher number of younger victims 
+              from police killing than elder victims from police killing, as well as a few high outliers; 
+              while in Kentucky, the number of younger and elder victims from police killing are much closer. 
+              Based on the age distribution of California and Kentucky, it is reasonable to infer that there are 
+              more police killing victims died at their early twenties or early thirties comparing to victims that 
+              died at a extremely old or young age")
 ))
 
 report_panel <- tabPanel(

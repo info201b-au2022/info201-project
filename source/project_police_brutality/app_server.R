@@ -85,4 +85,6 @@ server <- function(input, output) {
             ) %>%
     layout(title = "Age distribution Boxplot")
   })
+
+  
 }
