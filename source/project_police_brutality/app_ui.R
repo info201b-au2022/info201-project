@@ -22,7 +22,7 @@ introduction_panel <- tabPanel(
   mainPanel(p("This data set presents statistics about killings by police across the United States 
               from 2015 to 2017, provided by the Washington Post database and posted onto Kaggle. 
               This app displays three visualizations to help answer questions about the possible 
-              factors and influences on gun violence."),
+              factors and influences on police killings."),
             h3("We seek to answer these questions: "),
             p("Does one’s race influence killings by police?"),
             p("How does one’s age influence killings by police? "),
