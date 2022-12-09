@@ -129,7 +129,12 @@ summary_panel <- tabPanel(
               the use of a body camera. There seems to be no correlation between body camera 
               use and race, as there's a lack of body camera use in general, except for a few 
               outliers, where there may have been not a lot of deaths occurring in that state, and 
-              therefore showing a higher proportion of body camera use."),
+              therefore showing a higher proportion of body camera use. When comparing the state with 
+              the highest poverty level in the data(Mississippi) to the state with the lowest poverty level 
+              (New Jersey), it's interesting to note that while neither states incorporate heavy use of 
+              the body camera, New Jersey has more use of it than Mississippi with victims in the Asian 
+              category. When looking at a large and diverse state like California, The majority of deaths across 
+              all races fail to incorporate the use of body cameras."),
             h3("Race"),
             p("How does one’s age influence killings by police? "),
             h3("Age"),
