@@ -121,8 +121,20 @@ interactive_3_panel <- tabPanel(
 
 summary_panel <- tabPanel(
   title = "Summary",
-  titlePanel("Summary")
-)
+  titlePanel("Summary"),
+  mainPanel(
+            h2("Takeaways"),
+            h3("Body Cameras"),
+            p("In every state, the large majority of police killings failed to incorporate 
+              the use of a body camera. There seems to be no correlation between body camera 
+              use and race, as there's a lack of body camera use in general, except for a few 
+              outliers, where there may have been not a lot of deaths occurring in that state, and 
+              therefore showing a higher proportion of body camera use."),
+            h3("Race"),
+            p("How does one’s age influence killings by police? "),
+            h3("Age"),
+            p("Does one’s race influence killings by police?"),
+))
 
 report_panel <- tabPanel(
   title = "Report",
