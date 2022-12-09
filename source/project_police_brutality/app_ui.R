@@ -19,13 +19,13 @@ states <- unique(police_killings$state)
 introduction_panel <- tabPanel(
   title = "Introduction",
   titlePanel("Introduction"),
-  mainPanel(p("This data set presents statistics about gun violence across the United States 
+  mainPanel(p("This data set presents statistics about killings by police across the United States 
               from 2015 to 2017, provided by the Washington Post database and posted onto Kaggle. 
               This app displays three visualizations to help answer questions about the possible 
               factors and influences on gun violence."),
             h3("We seek to answer these questions: "),
-            p("Does one’s race influence gun violence?"),
-            p("How does one’s age influence gun violence? "),
+            p("Does one’s race influence killings by police?"),
+            p("How does one’s age influence killings by police? "),
             p("How does the use of a body camera differ amongst different states and races? "),
             img(src="https://i0.wp.com/www.yesmagazine.org/wp-content/uploads/imports/269ff4c6d4074b30b2435d19b482de76.jpg?w=1400&quality=90&ssl=1",
                 height = 400, 
@@ -131,7 +131,7 @@ report_panel <- tabPanel(
 
 ui <- navbarPage(
   theme = shinytheme("united"),
-  "Gun Violence",
+  "Police Brutality",
   introduction_panel,
   interactive_1_panel,
   interactive_2_panel,
